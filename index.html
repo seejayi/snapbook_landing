@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/vendors/scrolloverflow.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/jquery.fullPage.css" />
+
+    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.1/vendors/jquery.easings.min.js"></script>
+
+    <link rel="stylesheet" href="http://s.mlcdn.co/animate.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+            //Navigation
+            menu: '#menu',
+            lockAnchors: false,
+            anchors:['firstPage', 'secondPage', 'thirdPage', '4thPage', '5thPage', '6thPage', '7thPage'],
+            navigation: false,
+            navigationPosition: 'right',
+            navigationTooltips: ['firstSlide', 'secondSlide'],
+            showActiveTooltip: false,
+            slidesNavigation: true,
+            slidesNavPosition: 'bottom',
+
+            //Scrolling
+            css3: true,
+            scrollingSpeed: 700,
+            autoScrolling: true,
+            fitToSection: true,
+            fitToSectionDelay: 1000,
+            scrollBar: false,
+            easing: 'easeInOutCubic',
+            easingcss3: 'ease',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            continuousVertical: false,
+            normalScrollElements: ' ',
+            scrollOverflow: true,
+            scrollOverflowOptions: null,
+            touchSensitivity: 15,
+            normalScrollElementTouchThreshold: 5,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: true,
+
+            //Design
+            controlArrows: true,
+            verticalCentered: true,
+            sectionsColor : ['#fff', '#fff'],
+            paddingTop: '3em',
+            paddingBottom: '10px',
+            fixedElements: '#header, .right-nav-menu',
+            responsiveWidth: 0,
+            responsiveHeight: 0,
+
+            //Custom selectors
+            sectionSelector: '.section',
+            slideSelector: '.slide',
+
+            //events
+            onLeave: function(index, nextIndex, direction){
+              var leavingSection = $(this);
+
+              $('.section img').removeClass('animated bounceInUp');
+              if (index == 7 && direction == 'up'){
+                // $.fn.fullpage.setAutoScrolling(true);
+              }
+            },
+            afterLoad: function(anchorLink, index){
+              var loadedSection = $(this);
+
+              $('.section img').addClass('animated bounceInUp');
+              if (index == 7) {
+                // $.fn.fullpage.setAutoScrolling(false);
+              }
+            },
+            afterRender: function(){},
+            afterResize: function(){},
+            afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+            onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        });
+      });
+    </script>
+
+</head>
+
+<body>
+
+  <div id="header" class="header-wrap">
+    <header class="">
+      <div class="">
+        <a class="logo">
+          <h1>snapbook</h1>
+        </a>
+        <a href="#" class="get-app-btn">
+          <span class="apple-store-icon"></span>
+        </a>
+        <div class="text-right header-social-links">
+          <a href="#" class="fb-link"></a>
+          <a href="#" class="twitter-link"></a>
+          <a href="#" class="insta-link"></a>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="right-nav-menu">
+    <ul id="menu">
+      <li data-menuanchor="firstPage" class="active"><a href="#firstPage"></a></li>
+      <li data-menuanchor="secondPage"><a href="#secondPage"></a></li>
+      <li data-menuanchor="thirdPage"><a href="#thirdPage"></a></li>
+      <li data-menuanchor="4thPage"><a href="#4thPage"></a></li>
+      <li data-menuanchor="5thPage"><a href="#5thPage"></a></li>
+      <li data-menuanchor="6thPage"><a href="#6thPage"></a></li>
+      <li data-menuanchor="7thPage"><a href="#7thPage"></a></li>
+    </ul>
+  </div>
+
+  <section id="fullpage" class="fixed-content fluid-width">
+
+    <!-- 1st section -->
+    <section id="section0" class="section">
+
+        <img src="img/img_flower1.png" class="flower-bg">
+        <img src="img/img_rings.png" class="rings-bg">
+        <img src="img/img_clips.png" class="clips-bg">
+        <img src="img/img_photobook.png" class="photobook-bg">
+
+        <div class="content">
+          <div class="constrain">
+            <div class="content-text">
+              <div class="text-slide">
+                <h2>Photobooks</h2>
+                <div>
+                  <p>With Snapbook, you can crate premium high resolution Layflat Photo Albums right from your iPhone. Using ultra-thick premium quality paper along with our layflat binding technology, your beautiful photographs would be printed without interruption.</p>
+                </div>
+                <a href="#" class="get-app-btn mobile">
+                  <span class="apple-store-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="device-frame">
+              <div class="image-slides"></div>
+              <img class="device" src="img/img_iphone_white.png">
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- 2nd section -->
+    <section id="section1" class="section">
+
+        <img src="img/img_flower3.png" class="flower3-bg">
+        <img src="img/img_frame.png" class="frame-bg">
+        <img src="img/img_flower_2.png" class="flower2-bg">
+        <img src="img/img_polaroid.png" class="polaroid-bg">
+        <img src="img/img_camera.png" class="camera-bg">
+        <img src="img/img_pencils.png" class="pencils-bg">
+
+        <div class="content">
+          <div class="constrain">
+            <div class="content-text">
+              <div class="text-slide">
+                <h2>Prints</h2>
+                <div>
+                  <p>Enjoy high resolution printing for all of your iPhone photos. Download our app and print your photos in different sizes or types. You can print the classic sizes, passport/visa sizes or print amazing Polaroid style photos.</p>
+                </div>
+                <a href="#" class="get-app-btn mobile">
+                  <span class="apple-store-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="device-frame">
+              <div class="image-slides"></div>
+              <img class="device" src="img/img_iphone_white.png">
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- 3rd section -->
+    <section id="section2" class="section">
+
+        <img src="img/img_iphone_case.png" class="iphone-case-bg">
+        <img src="img/img_ipad_case.png" class="ipad-case-bg">
+        <img src="img/img_coaster.png" class="coaster-bg">
+        <img src="img/img_headphones.png" class="headphones-bg">
+
+        <div class="content">
+          <div class="constrain">
+            <div class="content-text">
+              <div class="text-slide">
+                <h2>Cases</h2>
+                <div>
+                  <p>Protect your iPhone or iPad our custom photo cases. Right from the palm of your hands, through Snapbook, you would be able to customize your own exclusive iPhone & iPad cases.</p>
+                </div>
+                <a href="#" class="get-app-btn mobile">
+                  <span class="apple-store-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="device-frame">
+              <div class="image-slides"></div>
+              <img class="device" src="img/img_iphone_white.png">
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- 4th section -->
+    <section id="section3" class="section">
+
+        <img src="img/img_bead.png" class="bead-bg">
+        <img src="img/img_cup.png" class="cup-bg">
+        <img src="img/img_vase.png" class="vase-bg">
+        <img src="img/img_mousepad.png" class="mousepad-bg">
+
+        <div class="content">
+          <div class="constrain">
+            <div class="content-text">
+              <div class="text-slide">
+                <h2>Gifts</h2>
+                <div>
+                  <p>Create and design exclusive photo gifts including mugs, mousepads and much more right from our app!</p>
+                </div>
+                <a href="#" class="get-app-btn mobile">
+                  <span class="apple-store-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="device-frame">
+              <div class="image-slides"></div>
+              <img class="device" src="img/img_iphone_white.png">
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- 5th section -->
+    <section id="section4" class="section">
+
+        <img src="img/img_canvas.png" class="canvas-bg">
+        <img src="img/img_pillow.png" class="pillow-bg">
+        <img src="img/img_plant.png" class="plant-bg">
+
+        <div class="content">
+          <div class="constrain">
+            <div class="content-text">
+              <div class="text-slide">
+                <h2>Decor</h2>
+                <div>
+                  <p>Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.</p>
+                </div>
+                <a href="#" class="get-app-btn mobile">
+                  <span class="apple-store-icon"></span>
+                </a>
+              </div>
+            </div>
+
+            <div class="device-frame">
+              <div class="image-slides"></div>
+              <img class="device" src="img/img_iphone_white.png">
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- 6th section -->
+    <section id="section5" class="section">
+
+        <img src="img/img_plant_2.png" class="plant2-bg">
+        <img src="img/img_pencils_2.png" class="pencils2-bg">
+
+        <div class="content">
+          <div class="constrain">
+            <div class="content-text-about">
+              <div class="text-slide">
+                <a href="#" class="get-app-btn mobile">
+                  <span class="apple-store-icon"></span>
+                </a>
+                <h2>About Snapbook</h2>
+                <div>
+                  <p>Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.</p>
+                  <p>Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.</p>
+                  <p>Beautify your home with our amazing home decor items.</p>
+                </div>
+                <h2>Our Promise</h2>
+                <div>
+                  <p>Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.Beautify your home with our amazing home decor items. Create custom pillows or plaques right from your iPhone.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+
+    <!-- 7th section -->
+    <section id="section6" class="section">
+
+        <img src="img/img_stapler.png" class="stapler-bg">
+        <img src="img/img_email.png" class="email-bg">
+
+        <div class="content">
+          <div class="constrain">
+
+            <div class="section-form-contacts">
+              <h2>Need help or have questions?</h2>
+<!-- !!!Please, add class "on-error" to <input type="email"> and delete class "hidden" from <span class="error-msg-block"> for display a error message!!! -->
+              <form name="contacts" class="contact-form">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" placeholder="Email">
+                  <span class="error-msg-block hidden">Please, enter correct email address</span>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Message">
+                </div>
+
+                <button type="submit" class="btn btn-contact-submit">Send</button>
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+
+    </section>
+
+  </section>
+
+
+</body>
+
+</html>

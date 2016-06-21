@@ -1,0 +1,1023 @@
+/*roboto fonts*/
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*-----header-----*/
+.header-wrap {
+	display: inline-block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+
+.logo {
+	color: #309fcd;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+.logo > h1 {
+	display: inline-block;
+	font-family: robotobold;
+	font-size: 42px;
+	letter-spacing: -3.2px;
+}
+
+.logo:hover {
+	text-decoration: none;
+	color: #309fcd;
+	cursor: pointer;
+}
+
+.get-app-btn {
+	display: inline-block;
+	width: 200px;
+	height: 50px;
+	border-radius: 5px; 
+	background-color: #737985;
+	padding: 8px 0px 0px 38px;
+	vertical-align: sub;
+}
+
+.get-app-btn:hover {
+	background-color: #8d94a1;
+}
+
+.get-app-btn:focus, .get-app-btn:active {
+	background-color: #4f5764;
+}
+
+.apple-store-icon {
+	background-image: url(img/ic_appstore.png);
+	background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.header-social-links {
+	display: inline-block;
+	float: right;
+	padding: 20px 30px 0px 0px;
+}
+
+.fb-link {
+	background-image: url(img/ic_fb_normal.png);
+	background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.fb-link:hover {
+	background-image: url(img/ic_fb_hover.png);
+}
+
+.fb-link:focus, .fb-link:active {
+	background-image: url(img/ic_fb_click.png);
+}
+
+.twitter-link {
+	background-image: url(img/ic_twitter_normal.png);
+	background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.twitter-link:hover {
+	background-image: url(img/ic_twitter_hover.png);
+}
+
+.twitter-link:focus, .twitter-link:active {
+	background-image: url(img/ic_twitter_click.png);
+}
+
+.insta-link {
+	background-image: url(img/ic_insta_normal.png);
+	background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.insta-link:hover {
+	background-image: url(img/ic_insta_hover.png);
+}
+
+.insta-link:focus, .insta-link:active {
+	background-image: url(img/ic_insta_click.png);
+}
+
+/*-----right fixet menu-----*/
+.right-nav-menu {
+	position: fixed;
+	right: 0;
+	top: 35%;
+	margin-right: 15px;
+	z-index: 99;
+}
+
+.right-nav-menu > ul {
+	list-style: none;
+}
+
+.right-nav-menu > ul > li {
+
+	margin-bottom: 12px;
+}
+
+.right-nav-menu > ul > li.active > a {
+	background-color: #309fcd;
+}
+
+.right-nav-menu > ul > li:hover {
+	cursor: pointer;
+}
+
+.right-nav-menu > ul > li > a {
+	padding: 0px 8px 0px 8px;
+    border-radius: 50%;
+    background-color: #98a3b5;
+}
+
+.right-nav-menu > ul > li > a:hover {
+	background-color: #309fcd;
+	text-decoration: none;
+}
+
+/*-----section's content style-----*/
+
+#section0, #section1, #section2, #section3, #section5, #section6 {
+	background-image: url(img/img_back.png);
+	background-repeat: no-repeat;
+	width: 1920px;
+}
+#section4 {
+	background-image: url(img/img_back_2.png);
+	background-repeat: no-repeat;
+	width: 1920px;
+}
+#section1 {
+	overflow: hidden;
+}
+
+.fixed-content {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	display: table;
+}
+
+.fluid-width {
+	margin: 0 auto;
+/*	padding-left: 3%;
+	padding-right: 3%;*/
+	max-width: 1400px;
+}
+
+.content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.constrain {
+	margin: 0 auto;
+}
+
+.content-text {
+	float: right;
+	position: relative;
+	left: 62%;
+	width: 500px;
+}
+
+.content-text-about {
+	position: relative;
+	left: 50%;
+    bottom: 282px;
+	width: 900px;
+}
+
+.content-text-about .text-slide h2 {
+	margin-bottom: 40px;
+}
+
+.content-text-about .text-slide div:first-of-type {
+	margin-bottom: 70px;
+}
+
+.text-slide {
+	position: absolute;
+	top: 25px;
+	left: 0;
+}
+
+#section4 .text-slide {
+	top: 250px;
+}
+
+.text-slide > h2 {
+	font-family: robotobold;
+	font-size: 40px;
+  	line-height: 1.0;
+  	color: #309fcd;
+  	margin-bottom: 20px;
+}
+
+.text-slide > div > p {
+	font-family: robotoregular;
+	font-size: 16px;
+  	line-height: 1.9;
+  	letter-spacing: 0.9px;
+  	color: #586171;
+}
+
+.device-frame {
+	position: relative;
+	left: 55%;
+	float: left;
+}
+
+.device {
+	width: 247px;
+  	height: 504px;
+  	box-shadow: 16px 19px 25px 0 rgba(185, 187, 191, 0.45);
+}
+
+
+/*-----contacts section style-----*/
+.section-form-contacts {
+	position: relative;
+    top: 0;
+    left: 100%;
+	text-align: center;
+}
+
+.section-form-contacts > h2 {
+	font-family: robotobold;
+	font-size: 40px;
+  	line-height: 1.0;
+  	color: #309fcd;
+  	margin-bottom: 50px;
+}
+
+.contact-form {
+	width: 525px;
+}
+
+.contact-form *.form-group *.form-control {
+	height: 60px;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #98a3b5;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.contact-form *.form-group *.form-control:focus {
+	font-family: robotoregular;
+	color: #586171;
+	border-color: transparent;
+	outline: none;
+	box-shadow: none;
+	border-bottom: 2px solid #309fcd;
+}
+
+input[type=text], input[type=email] {
+	font-family: robotolight;
+	font-size: 20px;
+	line-height: 1.0;
+	color: #98a3b5;
+}
+
+.btn-contact-submit {
+	font-family: robotoregular;
+	font-size: 16px;
+  	letter-spacing: 0.9px;
+  	color: #ffffff;
+	width: 160px;
+	height: 50px;
+	border-radius: 4px;
+	background-color: #309fcd;
+	margin-top: 50px;
+}
+
+.btn-contact-submit:hover {
+	background-color: #40b5e5;
+	color: #ffffff;
+}
+
+.btn-contact-submit:focus, .btn-contact-submit:active {
+	background-color: #2591be;
+	color: #ffffff;
+}
+
+.error-msg-block .hidden {
+	display: none;
+}
+
+.on-error, .on-error:focus {
+	border-bottom: 1px solid #ff3131 !important;
+}
+
+.error-msg-block {
+	display: block;
+	text-align: left;
+	font-family: robotoregular;
+  	font-size: 12px;
+  	font-weight: normal;
+  	line-height: 1.67;
+  	color: #ff3131;
+}
+
+/*-----custom animate style-----*/
+img {
+	visibility: hidden;
+}
+
+.animated {
+	visibility: visible;
+	/*animation-delay: 0.2s;*/
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/*-----sections bg style-----*/
+/*section0*/
+.photobook-bg {
+	position: absolute;
+	right: -5%;
+	bottom: -15%;
+}
+.clips-bg {
+	position: absolute;
+	left: 3%;
+	bottom: 0;	
+}
+.rings-bg {
+	position: absolute;
+	right: 36%;
+	top: 8%;	
+}
+.flower-bg {
+	position: absolute;
+	right: 16%;
+	top: -15%;	
+}
+/*section1(prints)*/
+.flower3-bg {
+	position: absolute;
+	left: 31%;
+	top: 9%;	
+}
+.frame-bg {
+	position: absolute;
+	right: 16%;
+	top: -26%;	
+}
+.flower2-bg {
+	position: absolute;
+	right: 1%;
+	bottom: -35%;	
+}
+.polaroid-bg {
+	position: absolute;
+	right: 24%;
+	bottom: -3%;
+}
+.camera-bg {
+	position: absolute;
+	right: 44%;
+	bottom: -2%;
+}
+.pencils-bg {
+	position: absolute;
+	left: 1%;
+	bottom: 0;
+}
+/*section2(cases)*/
+.iphone-case-bg {
+	position: absolute;
+	right: 20%;
+	top: -2%;
+}
+.ipad-case-bg {
+	position: absolute;
+	right: 10%;
+	bottom: -10%;
+}
+.coaster-bg {
+	position: absolute;
+	right: 45%;
+	bottom: 0;	
+}
+.headphones-bg {
+	position: absolute;
+	left:-2%;
+	bottom: -10%;
+}
+/*section3(gifts)*/
+.bead-bg {
+	position: absolute;
+	left:-2%;
+	bottom: 5%;
+}
+.cup-bg {
+	position: absolute;
+	right: 13%;
+	top: 0;
+}
+.vase-bg {
+	position: absolute;
+	right: 13%;
+	bottom: -12%;
+}
+.mousepad-bg {
+	position: absolute;
+	right: 37%;
+	bottom: -17%;
+}
+/*section4(decor)*/
+.canvas-bg {
+	position: absolute;
+	right: 26%;
+	top: 3%;
+}
+.pillow-bg {
+	position: absolute;
+	right: 14%;
+	bottom: 1%;
+}
+.plant-bg {
+	position: absolute;
+	left: -10%;
+	bottom: 0;
+}
+/*section5(about)*/
+.plant2-bg {
+	position: absolute;
+	right: 20%;
+	top: 5%;
+}
+.pencils2-bg {
+	position: absolute;
+	left: 1%;
+	bottom: -11%;
+}
+/*section6(contacts)*/
+.stapler-bg {
+	position: absolute;
+	right: 25%;
+	top: 15%;
+}
+.email-bg {
+	position: absolute;
+	left: -6%;
+	bottom: -25%;
+}
+
+
+.mobile {
+	display: none;
+}
+
+/*------------------------------media queries------------------------------*/
+@media (max-width: 1440px) {
+	.device-frame {
+		left: 27%;
+    	bottom: 30px;
+	}
+	.content-text {
+		left: 35%;
+    	bottom: 30px;
+	}
+	#section4 .device-frame {
+		bottom: 0;
+		top: 115px;
+	}
+	#section4 .content-text {
+		bottom: 0;
+		top: 65px;
+	}
+	.content-text-about {
+		top: -12px;
+    	left: -20%;
+	}
+	.section-form-contacts {
+		top: -43px;
+    	left: 86%;
+	}
+	.flower-bg {
+		right: 33%;
+	}
+	.rings-bg {
+		right: 53%;
+    	top: 11%;
+	}
+	.clips-bg {
+		left: -2%;
+	}
+	.photobook-bg {
+		right: 14%;
+    	bottom: -13%;
+	}
+	.flower3-bg {
+		left: 30%;
+    	top: 3%;
+	}
+	.flower2-bg {
+		right: 13%;
+	}
+	.polaroid-bg {
+		right: 32%;
+    	bottom: -6%;
+	}
+	.camera-bg {
+		right: 52%;
+    	bottom: -5%;
+	}
+	.pencils-bg {
+		left: -5%;
+	}
+	.iphone-case-bg {
+		right: 25%;
+    	top: -2%;
+	}
+	.iphone-case-bg {
+		right: 22%;
+    	bottom: -16%;
+	}
+	.coaster-bg {
+		right: 61%;
+    	bottom: -4%;
+	}
+	.headphones-bg {
+		left: -7%;
+	}
+	.bead-bg {
+		left: -8%;
+    	bottom: 0%;
+	}
+	.cup-bg {
+		right: 23%;
+	}
+	.vase-bg {
+		right: 19%;
+    	bottom: -14%;
+	}
+	.mousepad-bg {
+		right: 41%;
+    	bottom: -15%;
+	}
+	.canvas-bg {
+		right: 38%;
+    	top: 6%;
+	}
+	.pillow-bg {
+		right: 17%;
+	}
+	.plant-bg {
+		left: -12%;
+    	bottom: 4%;
+	}
+	.plant2-bg {
+		right: 23%;
+	}
+	.pencils2-bg {
+		left: -6%;
+    	bottom: -18%;
+	}
+	.stapler-bg {
+    	right: 29%;
+    	top: 13%;
+	}
+	.email-bg {
+		left: -10%;
+    	bottom: -33%;
+	}
+}
+
+@media (max-width: 1439px) {
+	.content-text-about {
+		left: 29%;
+		top: 150px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.content-text-about {
+		top: 125px;
+		left: 12%;
+		bottom: inherit;
+		width: 700px;
+	}
+	.section-form-contacts {
+		left: 65%;
+	}
+}
+
+@media (max-width: 990px) {
+	.content-text {
+    	left: 12%;
+    	width: 380px;
+	}
+	.device-frame {
+		left: 4%;
+	}
+	.section-form-contacts {
+		left: 25%;
+	}
+}
+
+@media (max-width: 768px) {
+	.content-text-about {
+		top: inherit;
+    	bottom: 420px;
+    	left: 2%;
+    	width: 680px;
+	}
+	.section-form-contacts {
+		left: 20%;
+	}
+	.device-frame {
+		left: 7%;
+		bottom: 25px;
+	}
+	.content-text {
+		left: 12%;
+		width: 380px;
+	}
+	.text-slide {
+		left: 15px;
+	}
+	#section4 .content-text {
+		top: -20px;
+	}
+	.flower-bg {
+    	right: 48%;
+	}
+	.rings-bg {
+    	right: 67%;
+	}
+	.clips-bg {
+    	left: -8%;
+	}
+	.photobook-bg {
+    	width: 732px;
+    	height: 476px;
+    	right: 51%;
+    	bottom: -9%;
+	}
+	.flower3-bg {
+    	height: 222px;
+    	left: 14%;
+    	top: 7%;
+	}
+	.flower2-bg {
+    	right: 43%;
+    	width: 600px;
+    	bottom: -24%;
+	}
+	.frame-bg {
+		width: 500px;
+    	top: -20%;
+    	right: 51%;
+	}
+	.camera-bg {
+    	right: 67%;
+    	bottom: 7%;
+    	width: 330px;
+	}
+	.polaroid-bg {
+    	right: 58%;
+    	width: 425px;
+    	bottom: -7%;
+	}
+	.pencils-bg {
+    	left: -13%;
+	}
+	.iphone-case-bg {
+		right: 53%;
+		top: -6%;
+    	width: 400px;
+	}
+	.ipad-case-bg {
+		right: 53%;
+    	bottom: -14%;
+    	width: 480px;
+	}
+	.coaster-bg {
+    	right: 81%;
+    	bottom: -6%;
+    	width: 200px;
+	}
+	.headphones-bg {
+    	left: -12%;
+	}
+	.bead-bg {
+    	left: -14%;
+    	bottom: -3%;
+	}
+	.cup-bg {
+    	left: 27%;
+    	width: 19%;
+	}
+	.vase-bg {
+    	left: 23%;
+    	bottom: 13%;
+    	width: 26%;
+	}
+	.mousepad-bg {
+    	right: 62%;
+    	bottom: -9%;
+    	width: 25%;
+	}
+	.canvas-bg {
+		right: 62%;
+		top: 1%;
+		width: 34%;
+	}
+	.pillow-bg {
+		left: 22%;
+    	bottom: 10%;
+    	width: 29%;
+	}
+	.plant-bg {
+		left: -16%;
+	}
+	.plant2-bg {
+		left: 32%;
+    	top: 1%;
+	}
+	.pencils2-bg {
+		left: -15%;
+	}
+	.stapler-bg {
+    	left: 31%;
+    	top: 10%;
+	}
+}
+
+@media (max-width: 690px) {
+	.content-text {
+		width: 280px;
+	}
+	.content-text-about {
+		width: 585px;
+	}
+	.section-form-contacts {
+		left: 10%;
+	}
+}
+
+@media (max-width: 600px) {
+	.device-frame {
+		display: none;
+	}
+	.content-text {
+		width: 380px;
+    	bottom: 350px;
+	}
+	#section4 .content-text {
+    	top: -200px;
+	}
+	.content-text-about {
+		width: 400px;
+	}
+	.section-form-contacts {
+    	left: 3%;
+	}
+	.section-form-contacts h2 {
+		width: 380px;
+	}
+	.contact-form {
+		width: 380px;
+	}
+	.get-app-btn {
+		display: none;
+	}
+	.mobile {
+		display: inline-block;
+	}
+}
+
+@media (max-width: 420px){
+	.logo {
+		margin-left: 8px;
+		margin-right: 0;
+	}
+
+	.logo > h1 {
+		font-size: 32px;
+		margin-top: 15px;
+	}
+
+	.header-social-links {
+		padding: 20px 15px 0 0;
+	}
+
+	.get-app-btn {
+		display: none;
+	}
+
+	 .mobile {
+		display: inline-block;
+	}
+
+	.device-frame {
+		display: none;
+	}
+
+	.content-text {
+		left: 7%;
+		bottom: 28px;
+		width: 250px;
+		float: none;
+	}
+
+	.text-slide {
+		position: inherit;
+	}
+
+
+	.flower-bg {
+		display: none;
+	}
+	.clips-bg {
+		display: none;
+	}
+	.rings-bg {
+		top: 9%;
+    	left: 12%;
+	}
+	.photobook-bg {
+    	left: -2%;
+    	bottom: -23%;
+    	width: 23%;
+    	height: 43%;
+	}
+
+	.flower3-bg {
+		display: none;
+	}
+	.frame-bg {
+		display: none;
+	}
+	.flower2-bg {
+		display: none;
+	}
+	.camera-bg {
+		display: none;
+	}
+	.pencils-bg {
+		display: none;
+	}
+	.polaroid-bg {
+    	left: 0;
+    	bottom: -56%;
+    	width: 22%;
+	}
+
+	.ipad-case-bg {
+		display: none;
+	}
+	.coaster-bg {
+		display: none;
+	}
+	.headphones-bg {
+		display: none;
+	}
+	.iphone-case-bg {
+    	left: 0%;
+    	top: 75%;
+    	width: 20%;
+	}
+
+	.bead-bg {
+		display: none;
+	}
+	.cup-bg {
+		display: none;
+	}
+	.vase-bg {
+		display: none;
+	}
+	.mousepad-bg {
+    	left: 3%;
+    	bottom: -33%;
+    	width: 20%;
+	}
+
+	#section4 .content-text {
+		bottom: 310px;
+		top: inherit;
+	}
+	.pillow-bg {
+		left: 1%;
+		bottom: 0;
+    	width: 22%;
+	}
+	.canvas-bg {
+		display: none;
+	}
+	.plant-bg {
+		display: none;
+	}
+	.plant2-bg, .pencils2-bg {
+		display: none;
+	}
+	.stapler-bg {
+		display: none;
+	}
+	.email-bg {
+		bottom: -79%;
+		left: -7%;
+    	width: 29%;
+	}
+
+	.content-text-about {
+		width: 280px;
+		top: 25px;
+    	left: 4%;
+	}
+
+	.content-text-about .mobile {
+		margin-bottom: 15px;
+	}
+
+	.section-form-contacts {
+		width: 280px;
+		left: 7%;
+		bottom: 160px;
+		top: 37px;
+	}
+	.section-form-contacts > h2 {
+		text-align: left;
+		margin-bottom: 10px;
+		width: 280px;
+	}
+	.contact-form {
+		width: 280px;
+	}
+}
+
+@media (max-height: 640px) {
+	.device {
+		padding-top: 40px;
+	}
+}
+
+@media (max-height: 540px) {
+	.device {
+		visibility: hidden;
+	}
+	.content-text {
+		left: 1%;
+		top: 30px;
+	}
+}
