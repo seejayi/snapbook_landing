@@ -1029,6 +1029,12 @@ img {
 	}
 }
 
+@media (max-height: 690px) {
+	.device-frame {
+		bottom: 15px;
+	}
+}
+
 @media (max-height: 640px) {
 	.device {
 		/*padding-top: 40px;*/
